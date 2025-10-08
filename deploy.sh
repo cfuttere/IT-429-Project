@@ -658,7 +658,7 @@ deploy_ui() {
     UI_TEMP_DIR="/tmp/pdf-ui-deployment-$$"
     print_status "📥 Cloning UI repository..."
     
-    if ! git clone -b updatedUI https://github.com/ASUCICREPO/PDF_accessability_UI "$UI_TEMP_DIR" 2>/dev/null; then
+    if ! git clone -b Charles https://github.com/cfuttere/IT-429-Project-pdf2html-UI "$UI_TEMP_DIR" 2>/dev/null; then
         print_error "Failed to clone UI repository. Check internet connection and repository access."
         return 1
     fi
